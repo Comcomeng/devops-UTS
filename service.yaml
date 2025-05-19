@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: login-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
-    app: login-app
+    app: login
   ports:
   - protocol: TCP
     port: 80
